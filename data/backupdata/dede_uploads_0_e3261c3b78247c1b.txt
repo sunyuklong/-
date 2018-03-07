@@ -1,0 +1,7 @@
+INSERT INTO `dede_uploads` VALUES('1','2','让那场风雨把我绞染','/uploads/allimg/170214/164ZJ0J-0.jpg','1','496','300','0','52910','1487062156','1');
+INSERT INTO `dede_uploads` VALUES('2','3','耐住寂寞的智慧','/uploads/allimg/170214/1A61I021-0.jpg','1','480','280','0','25820','1487062577','1');
+INSERT INTO `dede_uploads` VALUES('3','7','活着是一种心态','/uploads/allimg/170214/1FT4DO-0.jpg','1','438','288','0','31082','1487063325','1');
+INSERT INTO `dede_uploads` VALUES('4','8','繁华散尽 学会了优雅转身','/uploads/allimg/170214/1F9506112-0.jpg','1','355','235','0','23336','1487063390','1');
+INSERT INTO `dede_uploads` VALUES('5','25','是谁在我心底滞留幻化成伤','/uploads/allimg/170214/1K35a0B-0.jpg','1','399','293','0','9360','1487066040','1');
+INSERT INTO `dede_uploads` VALUES('6','25','是谁在我心底滞留幻化成伤','/uploads/allimg/170214/1K3595I3-1.jpg','1','500','332','0','17898','1487066040','1');
+INSERT INTO `dede_uploads` VALUES('7','25','是谁在我心底滞留幻化成伤','/uploads/allimg/170214/1K359CK-2.jpg','1','581','659','0','67587','1487066040','1');

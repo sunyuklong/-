@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>{dede:field.title/}</title>
+  <meta name="keywords" content="{dede:field name='keywords'/}" />
+  <meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}" />
+  <link rel="stylesheet" type="text/css" href="{dede:global.cfg_basehost/}/style/css/common.css?v7.2" /> 
+  <link rel="stylesheet" type="text/css" href="{dede:global.cfg_basehost/}/style/css/public.css?v1" />  
+  <script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/jq.js?v4.1"></script> 
+  <script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/ss.js?v4.8"></script> 
+  
+ </head> 
+ <body> 
+  <div class="pb-container"> 
+   <div class="pb-container-main pb-after-clear"> 
+    {dede:include filename='header.htm'/}
+    <!-- 面包屑 --> 
+    <div class="pb-main pb-breadcrumbs pb-mt40 pb-size-small"> 
+     {dede:field name='position'/} 
+    </div> 
+    <!-- 面包屑结束 --> 
+    <!-- 当前页面内容 --> 
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_basehost/}/style/css/article.css?v3" /> 
+    <div class="pb-main pb-mt20"> 
+     <!--主文章展示--> 
+     <div class="atl-main pb-inner-main"> 
+      <div class="pb-after-clear"> 
+       <h1 class="pb-fl">{dede:field.title/}</h1>
+      </div> 
+      <div class="pb-mt15 pb-size-tiny meta"> 
+       <span class="dt">{dede:field name='pubdate' function='GetDateMk(@me)'/}</span> 
+       <span class="at">作者：{dede:field.writer/}</span> &nbsp;&nbsp;|&nbsp;&nbsp; 
+       <span class="vw"><i class="pb-icons"></i>浏览（{dede:field.click/}）</span>  
+      </div> 
+      <div class="pb-mt20 cnt"> 
+       {dede:field.body/} 
+      </div> 
+      <div class="pb-mt30 pb-after-clear pb-art-sxp">
+        <ul>
+          <li>{dede:prenext get='pre'/}</li>
+          <li>{dede:prenext get='next'/}</li>
+        </ul>       
+      </div> 
+     
+      <div class=" pb-mt50"> 
+       <h6 class="pb-clr1 pb-size-big">相关文章</h6> 
+       <ul class="wqzt pb-mt10">
+       {dede:likearticle  row='4' titlelen='40'}
+        <li> 
+         <dl> 
+          <dt> 
+           <a href="[field:arcurl/]"><img alt="[field:fulltitle/]" src="[field:litpic/]" /></a> 
+          </dt> 
+          <dd>
+           <a href="news_detail.html?-1">[field:title /]</a>
+          </dd> 
+         </dl> 
+         </li>
+         {/dede:likearticle}
+        <li> 
+       </ul> 
+      </div> 
+      
+
+
+     </div> 
+     <!--主文章展示 end--> 
+ 
+     {dede:include filename='right.htm'/}
+
+
+   </div> 
+   {dede:include filename='footer.htm'/}
+   
+  </div> 
+  
+ </body>
+</html>

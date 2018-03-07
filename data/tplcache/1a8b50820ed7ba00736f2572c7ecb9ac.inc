@@ -1,0 +1,1 @@
+<li class="pb-mt20"> <a href="[field:arcurl/]"><img src="[field:image/]" class="pb-fl" alt="[field:fulltitle/]" /></a> <a href="[field:arcurl/]" class="pb-fl rt">[field:title/]</a> <p class="pb-iblock">[field:description function="cn_substr(@me,80)"/]</p> </li>

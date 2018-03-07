@@ -1,0 +1,1 @@
+<a href="[field:arcurl/]" class="pb-iblock pb-fl"> <img src="[field:litpic/]" class="pb-block" alt="[field:title/]" /> </a>

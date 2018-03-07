@@ -1,0 +1,32 @@
+<!-- 公共头部 --> 
+<div class="pb-main pb-navwrap pb-after-clear"> 
+    <div class="pb-iblock pb-fl pb-logo"> 
+        <a href="index.html"><img src="{dede:global.cfg_basehost/}/style/images/logo.png" alt="欧美亚" /></a> 
+    </div> 
+    <div class="pb-iblock pb-fl pb-nav"> 
+        <ul> 
+            <li><a href="{dede:global.cfg_basehost/}">首页</a></li> 
+            {dede:channel row='4'  type=top}
+             <li><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></li>
+             {/dede:channel} 
+        </ul> 
+    </div> 
+    <div class="pb-iblock pb-fr pb-oths"> 
+        <a class="nmt" href="javascript:void(0);" onclick="Sys.commStat(2);
+commonLib.SetHome(this);">设为首页</a> 
+        <a class="nmt" href="index.html" rel="sidebar" onclick="Sys.commStat(1);
+commonLib.addFavorite();">收藏我们</a> 
+         
+        <div class="pb-ucenter pb-after-clear"> 
+            
+            
+        </div> 
+        <br /> 
+        <form name="search" method="post" action="/plus/search.php"> 
+            <input class="pb-search-btn" type="submit" value="" /> 
+            <input class="pb-search" type="text" name="keyword"/> 
+        </form> 
+    </div> 
+</div> 
+<!-- 公共头部 -->
+ 
